@@ -422,8 +422,15 @@ return firstSelectedOption;
     	js.executeScript("arguments[0].scrollIntoView(true)",element);
     	
     }
+
+    public void scrollDown1(WebElement element) {
+    	elementVisibility(element);
+    	JavascriptExecutor js = (JavascriptExecutor)driver;
+    	js.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
     public void clear97(WebElement element) {
 		elementVisibility(element);
 		element.clear();
+
 	}
 }
